@@ -1,0 +1,9 @@
+apiVersion: workload.nephio.org/v1alpha1
+kind: NFDeployment
+metadata: # kpt-merge: oai-core/ausf-core
+  name: ausf-core
+  namespace: oai-core
+  annotations:
+    internal.kpt.dev/upstream-identifier: 'workload.nephio.org|NFDeployment|oai-core|ausf-core'
+spec:
+  provider: ausf.openairinterface.org
