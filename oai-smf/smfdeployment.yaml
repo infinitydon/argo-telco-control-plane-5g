@@ -4,7 +4,7 @@ metadata: # kpt-merge: oai-core/smf-core
   name: smf-core
   namespace: oai-core
   annotations:
-    internal.kpt.dev/upstream-identifier: 'workload.nephio.org|NFDeployment|oai-core|smf-core'
+    internal.kpt.dev/upstream-identifier: workload.nephio.org|NFDeployment|oai-core|smf-core
 spec:
   provider: smf.openairinterface.org
   capacity:
@@ -13,8 +13,8 @@ spec:
   interfaces:
   - name: n4
     ipv4:
-      address: SMF_N4_IP
-      gateway: SMF_N4_GW
+      address: 10.1.4.16/24
+      gateway: 10.1.4.1
     vlanID: 31
   networkInstances:
   - name: vpc-internal
