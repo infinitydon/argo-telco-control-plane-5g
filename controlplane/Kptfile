@@ -1,0 +1,22 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata: # kpt-merge: /controlplane
+  name: controlplane
+  annotations:
+    config.kubernetes.io/local-config: "true"
+    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|controlplane'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/infinitydon/nephio-aws-packages.git
+    directory: free5gc-control-plane-package
+    ref: r3-argocd
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/infinitydon/nephio-aws-packages.git
+    directory: free5gc-control-plane-package
+    ref: r3-argocd
+    commit: e506ed4449c8235e88e50057a92e14fe1aa3b6d7
+info:
+  description: this package is used to create the EKS terraform FLuxcD GitRepo Resource
