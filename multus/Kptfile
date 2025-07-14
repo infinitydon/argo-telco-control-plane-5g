@@ -17,6 +17,6 @@ upstreamLock:
     repo: https://github.com/infinitydon/nephio-aws-packages.git
     directory: multus-package
     ref: r3-argocd
-    commit: f03897787ca65a4980df9baa24843459b302584a
+    commit: cd6ac3768b2b1c1bd572b4435f2687410ceefc89
 info:
   description: this package is used to create the EKS terraform FLuxcD GitRepo Resource
